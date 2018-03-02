@@ -1,0 +1,20 @@
+{
+    "name": "cryptaddress",
+    "public": false,
+    "alias": [
+        "cryptaddress.now.sh",
+        "cryptocurrency-address-detector.now.sh"
+    ],
+    "files": [
+        "index.js",
+    	".env",
+        "css/styles.css",
+        "index.html",
+        "status.html",
+        "package.json",
+        "imgs/*"
+    ],
+    "env": {
+        "NODE_ENV": "production"
+    }
+}
