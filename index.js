@@ -42,15 +42,22 @@ app.post('/detect', function(req, res, next) {
 
     addressDetect(address).then(cryptocurrency => {
         if (cryptocurrency != 'Cryptocurrency could not be detected') {
-            if (cryptocurrency == 'BTC/BCH') status += 'is a <b>Bitcoin</b> (<b>BTC</b>) or <b>Bitcoin Cash</b> (<b>BCH</b>) address!';
-            else if (cryptocurrency == 'ETH') status += 'is an <b>Ethereum</b> (<b>ETH</b>) address!';
-            else if (cryptocurrency == 'LTC') status += 'is a <b>Litecoin</b> (<b>LTC</b>) address!';
-            else if (cryptocurrency == 'DOGE') status += 'is a <b>Dogecoin</b> (<b>DOGE</b>) address!';
-            else if (cryptocurrency == 'DASH') status += 'is a <b>DASH</b> address!';
-            else if (cryptocurrency == 'XMR') status += 'is a <b>Monero</b> (<b>XMR</b>) address!';
-            else if (cryptocurrency == 'XRP') status += 'is a <b>Ripple</b> (<b>XRP</b>) address!';
-            else if (cryptocurrency == 'NEO') status += 'is a <b>NEO</b> address!';
-            else status += '...Something went very wrong!';
+            const cryptocurrencies = {
+                'BTC/BCH': 'a <b>Bitcoin</b> (<b>BTC</b>) or <b>Bitcoin Cash</b> (<b>BCH</b>)',
+                'ETH': 'an <b>Ethereum</b> (<b>ETH</b>)',
+                'LTC': 'a <b>Litecoin</b> (<b>LTC</b>)',
+                'DOGE': 'a <b>Dogecoin</b> (<b>DOGE</b>)',
+                'DASH': 'a <b>DASH</b>',
+                'XMR': 'a <b>Monero</b> (<b>XMR</b>)',
+                'XRP': 'a <b>Ripple</b> (<b>XRP</b>)',
+                'NEO': 'a <b>NEO</b>'
+            };
+            if (cryptocurrency in cryptocurrencies) {
+                status += 'is ' + cryptocurrencies[cryptocurrency] + ' address!';
+            }
+            else {
+                status += '...Something went very wrong!';
+            }
             var icon = '<img src="imgs/' + cryptocurrency.toLowerCase().replace('/', '-') + '.svg">'
         } else {
             status += '<b>does not seem to correspond</b> to any of our featured cryptocurrencies.';
