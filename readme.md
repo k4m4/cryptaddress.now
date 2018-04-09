@@ -84,6 +84,7 @@ Then, run `now` from *within* the directory of `cryptaddress.now`:
 # Related
 
 - [cryptocurrency-address-detector](https://github.com/k4m4/cryptocurrency-address-detector) - Detect which cryptocurrency an address corresponds to.
+- [cryptaddress-validator](https://github.com/k4m4/cryptaddress-validator) - Validate Bitcoin, Ethereum, Litecoin & other popular cryptocurrency addresses.
 
 
 <br>
