@@ -15,6 +15,7 @@
         "imgs/*"
     ],
     "env": {
-        "NODE_ENV": "production"
+        "NODE_ENV": "production",
+        "SECRET": "@secret"
     }
 }
