@@ -12,7 +12,7 @@
         "index.html",
         "status.html",
         "package.json",
-        "imgs/*"
+        "imgs/"
     ],
     "env": {
         "NODE_ENV": "production",
