@@ -44,7 +44,7 @@ app.post('/detect', function(req, res, next) {
         if (cryptocurrency != 'Cryptocurrency could not be detected') {
             const cryptocurrencies = {
                 'BTC/BCH': 'a <b>Bitcoin</b> (<b>BTC</b>) or <b>Bitcoin Cash</b> (<b>BCH</b>)',
-                'BCH': 'a <b>Bitcoin Cash</b> (<b>BCH</b> CashAddr)'
+                'BCH': 'a <b>Bitcoin Cash</b> (<b>BCH</b> CashAddr)',
                 'ETH': 'an <b>Ethereum</b> (<b>ETH</b>)',
                 'LTC': 'a <b>Litecoin</b> (<b>LTC</b>)',
                 'DOGE': 'a <b>Dogecoin</b> (<b>DOGE</b>)',
