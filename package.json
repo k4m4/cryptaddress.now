@@ -20,18 +20,18 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.19.0",
     "cookie-session": "^2.0.0-beta.3",
-    "cryptocurrency-address-detector": "^1.0.5",
+    "cryptocurrency-address-detector": "^1.1.0",
     "dotenv": "^5.0.0",
-    "express": "^4.16.4",
-    "express-sanitizer": "^1.0.4",
-    "helmet": "^3.15.0",
-    "truncate": "^2.0.1",
-    "truncate-html": "^1.0.1",
+    "express": "^4.17.1",
+    "express-sanitizer": "^1.0.5",
+    "helmet": "^3.18.0",
+    "truncate": "^2.1.0",
+    "truncate-html": "^1.0.2",
     "validator": "^9.4.1"
   },
   "devDependencies": {
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.19.1"
   }
 }
