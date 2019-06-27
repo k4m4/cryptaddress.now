@@ -1,6 +1,6 @@
 {
   "name": "cryptaddress.now",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Minimal service to detect what cryptocurrency an address corresponds to.",
   "author": {
     "name": "Nikolaos Kamarinakis",
