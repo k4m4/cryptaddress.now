@@ -8,7 +8,7 @@
 	<sub>Visit <a href="https://cryptaddress.now.sh"><code>cryptaddress.now.sh</code></a> for a live demo. Check out my <a href="https://nikolaskama.me">blog</a> and follow me on <a href="https://twitter.com/nikolaskama">Twitter</a>.</sub>
 </p>
 
-<img align="center" src="https://nikolaskama.me/content/images/2018/04/cryptaddress.gif">
+<img align="center" src="https://nikolaskama.me/content/images/2020/01/cryptaddress.gif">
 
 <br>
 
