@@ -1,21 +1,16 @@
 {
     "name": "cryptaddress",
-    "public": false,
+    "version": 2,
     "alias": [
-        "cryptaddress.now.sh",
-        "cryptocurrency-address-detector.now.sh"
+      "cryptaddress.now.sh",
+      "cryptocurrency-address-detector.now.sh"
     ],
-    "files": [
-        "index.js",
-    	".env",
-        "css/styles.css",
-        "index.html",
-        "status.html",
-        "package.json",
-        "imgs/"
+    "builds": [
+      { "src": "package.json", "use": "@now/next" },
+      { "src": "index.js", "use": "@now/node" }
     ],
-    "env": {
-        "NODE_ENV": "production",
-        "SECRET": "@secret"
-    }
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/index.js" },
+      { "src": "/(.*)", "dest": "/$1" }
+    ]
 }

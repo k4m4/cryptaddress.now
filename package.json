@@ -1,16 +1,20 @@
 {
   "name": "cryptaddress.now",
   "version": "1.0.5",
-  "description": "Minimal service to detect what cryptocurrency an address corresponds to.",
+  "description": "Detect which cryptocurrency an address corresponds to.",
   "author": {
     "name": "Nikolaos Kamarinakis",
-    "url": "nikolaskama.me",
+    "url": "https://nikolaskama.me",
     "email": "nikolaskam@gmail.com"
   },
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "start": "next start",
+    "build": "next build",
+    "now-build": "next build",
+    "export": "next export"
   },
   "keywords": [
     "cryptaddress",
@@ -18,20 +22,18 @@
     "address",
     "detector"
   ],
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-session": "^2.0.0-beta.3",
-    "cryptocurrency-address-detector": "^1.1.0",
-    "dotenv": "^5.0.0",
-    "express": "^4.17.1",
-    "express-sanitizer": "^1.0.5",
-    "helmet": "^3.18.0",
-    "truncate": "^2.1.0",
-    "truncate-html": "^1.0.2",
-    "validator": "^9.4.1"
+  "engines": {
+    "node": "12.x"
   },
-  "devDependencies": {
-    "nodemon": "^1.19.1"
+  "dependencies": {
+    "@svgr/webpack": "^5.0.1",
+    "cryptocurrency-address-detector": "^1.1.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.1",
+    "helmet": "^3.21.2",
+    "next": "^9.1.6",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-input-autosize": "^2.2.2"
   }
 }
