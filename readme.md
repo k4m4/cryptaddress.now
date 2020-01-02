@@ -1,4 +1,4 @@
-<img align="center" src="https://nikolaskama.me/content/images/2020/01/cryptaddress.gif">
+<img align="center" src="https://nikolaskama.me/content/images/2020/01/cryptaddress.gif" width="400">
 
 ---
 
