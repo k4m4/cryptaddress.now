@@ -17,7 +17,7 @@ const Index = () => {
 			return setState({ ...state, response: 'Cryptocurrency could not be detected', image: '' });
 		}
 
-		const response = await fetch(`/api/${encodeURIComponent(address)}`);
+		const response = await fetch(`/api/address/${encodeURIComponent(address)}`);
 		const data = await response.json();
 		try {
 			if (data.error) {

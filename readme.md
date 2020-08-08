@@ -19,14 +19,9 @@ First, clone the repository and install its dependencies:
 ~/cryptaddress.now ❯❯❯ npm install
 ```
 
-Make sure that you have [`vercel`](https://vercel.com/download) installed:
-```bash
-~ ❯❯❯ npm install -g vercel
-```
-
 Subsequently, start the development server:
 ```bash
-~/cryptaddress.now ❯❯❯ vercel dev
+~/cryptaddress.now ❯❯❯ npm run dev
 ```
 You can then access the service by navigating to [`localhost:3000`](http://localhost:3000).
 

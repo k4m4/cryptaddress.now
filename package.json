@@ -13,9 +13,7 @@
     "lint": "xo",
     "dev": "next",
     "start": "next start",
-    "build": "next build",
-    "now-build": "next build",
-    "export": "next export"
+    "build": "next build"
   },
   "xo": {
     "extends": "xo-react",
@@ -44,6 +42,12 @@
         "rules": {
           "react/no-danger": "off"
         }
+      },
+      {
+        "files": "pages/api/**/*",
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
       }
     ]
   },
@@ -59,9 +63,6 @@
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
     "cryptocurrency-address-detector": "^1.1.2",
-    "express": "^4.17.1",
-    "express-validator": "^6.6.1",
-    "helmet": "^3.23.3",
     "next": "^9.5.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
