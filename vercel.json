@@ -1,10 +1,5 @@
 {
-    "name": "cryptaddress",
     "version": 2,
-    "alias": [
-      "cryptaddress.now.sh",
-      "cryptocurrency-address-detector.now.sh"
-    ],
     "builds": [
       { "src": "package.json", "use": "@now/next" },
       { "src": "index.js", "use": "@now/node" }

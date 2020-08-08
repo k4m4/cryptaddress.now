@@ -1,4 +1,4 @@
-// Source: https://github.com/zeit/hyper-site/blob/master/pages/_document.js
+// Source: https://github.com/vercel/hyper-site/blob/master/pages/_document.js
 import Document, { Head, Main, NextScript } from 'next/document'
 
 import { GA_TRACKING_ID } from '../lib/gtag'

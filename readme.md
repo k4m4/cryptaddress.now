@@ -19,36 +19,36 @@ First, clone the repository and install its dependencies:
 ~/cryptaddress.now ❯❯❯ npm install
 ```
 
-Make sure that you have [ZEIT `now`](https://zeit.co/download) installed:
+Make sure that you have [`vercel`](https://vercel.com/download) installed:
 ```bash
-~ ❯❯❯ npm install -g now
+~ ❯❯❯ npm install -g vercel
 ```
 
 Subsequently, start the development server:
 ```bash
-~/cryptaddress.now ❯❯❯ now dev
+~/cryptaddress.now ❯❯❯ vercel dev
 ```
 You can then access the service by navigating to [`localhost:3000`](http://localhost:3000).
 
 ## Deployment
 
-[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/k4m4/cryptaddress.now)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https%3A%2F%2Fgithub.com%2Fk4m4%2Fcryptaddress.now)
 
 Alternatively, to deploy `cryptaddress.now` manually:
 
-First, [download `now`](https://zeit.co/download):
+First, [download `vercel`](https://vercel.com/download):
 ```bash
-~ ❯❯❯ npm install -g now
+~ ❯❯❯ npm install -g vercel
 ```
 
-Then, run `now` from *within* the `cryptaddress.now` directory:
+Then, run `vercel` from *within* the `cryptaddress.now` directory:
 ```bash
-~/cryptaddress.now ❯❯❯ now
+~/cryptaddress.now ❯❯❯ vercel
 ```
 
 # Credits
 
-- Most of the `next.js` code and styling was adapted from [zeit](https://zeit.co)'s [title-site](https://github.com/zeit/title-site).
+- Most of the `next.js` code and styling was adapted from [Vercel](https://vercel.com)'s [title-site](https://github.com/vercel/title-site).
 - Cryptocurrency icons:
 	- [Bitcoin](https://thenounproject.com/search/?q=bitcoin&creator=2128292&i=813127) by [Aldric Rodríguez](https://thenounproject.com/aldricroib2/)
 	- [Ethereum](https://thenounproject.com/term/ethereum/1529277/) by [Strohberto](https://thenounproject.com/stroh)

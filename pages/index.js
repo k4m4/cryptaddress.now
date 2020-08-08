@@ -90,7 +90,7 @@ const Index = () => {
         <nav>
           <a href="https://github.com/k4m4/cryptaddress.now" target="_blank">Source</a>
           <b/>
-          <a href="https://zeit.co/now" target="_blank">Hosted on Now</a>
+          <a href="https://vercel.com" target="_blank">Hosted with Vercel</a>
         </nav>
       </aside>
     </main>
