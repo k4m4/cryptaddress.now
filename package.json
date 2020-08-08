@@ -26,14 +26,14 @@
     "node": "12.x"
   },
   "dependencies": {
-    "@svgr/webpack": "^5.0.1",
-    "cryptocurrency-address-detector": "^1.1.1",
+    "@svgr/webpack": "^5.4.0",
+    "cryptocurrency-address-detector": "^1.1.2",
     "express": "^4.17.1",
-    "express-validator": "^6.3.1",
-    "helmet": "^3.21.2",
-    "next": "^9.1.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "express-validator": "^6.6.1",
+    "helmet": "^3.23.3",
+    "next": "^9.5.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-input-autosize": "^2.2.2"
   }
 }
