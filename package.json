@@ -1,6 +1,6 @@
 {
   "name": "cryptaddress.now",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "Detect which cryptocurrency an address corresponds to.",
   "author": {
     "name": "Nikolaos Kamarinakis",
