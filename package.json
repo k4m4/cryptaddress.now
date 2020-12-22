@@ -58,7 +58,7 @@
     "detector"
   ],
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
