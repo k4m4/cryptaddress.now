@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import React, { useState } from 'react';
 import AutosizeInput from 'react-input-autosize';
+import Loader from 'react-loader-spinner';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 
 const Index = () => {
 	const initState = {
@@ -11,6 +13,7 @@ const Index = () => {
 	};
 
 	const [state, setState] = useState(initState);
+	const [loading, setLoading] = useState(false);
 
 	const getAddress = async address => {
 		if (address.length === 0) {
@@ -46,7 +49,9 @@ const Index = () => {
 
 	const handleSubmit = async event => {
 		event.preventDefault();
+		setLoading(true);
 		await getAddress(state.value);
+		setLoading(false);
 	};
 
 	const settings = {
@@ -81,7 +86,16 @@ const Index = () => {
 				</form>
 
 				<p className='res'>
-					{state.response} {(state.image.length > 0) && <img src={state.image} />}
+					{loading ? (
+						<Loader
+							type='Oval'
+							color='black'
+							height={25}
+							width={25}
+						/>
+					) : (
+						<span>{state.response} {(state.image.length > 0) && (<img src={state.image} />)}</span>
+					)}
 				</p>
 			</section>
 

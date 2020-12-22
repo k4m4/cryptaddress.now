@@ -65,7 +65,8 @@
     "next": "^10.0.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-input-autosize": "^3.0.0"
+    "react-input-autosize": "^3.0.0",
+    "react-loader-spinner": "^3.1.14"
   },
   "devDependencies": {
     "eslint-config-xo": "^0.33.1",
