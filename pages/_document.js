@@ -1,7 +1,5 @@
-// Source: https://github.com/vercel/hyper-site/blob/master/pages/_document.js
 import React from 'react';
-import Document, { Head, Main, NextScript } from 'next/document';
-
+import Document, { Html, Head, Main, NextScript } from 'next/document';
 import { GA_TRACKING_ID } from '../lib/gtag';
 
 export default class MyDocument extends Document {
@@ -12,7 +10,7 @@ export default class MyDocument extends Document {
 
 	render() {
 		return (
-			<html>
+			<Html>
 				<Head />
 				<body>
 					<Main />
@@ -33,7 +31,7 @@ export default class MyDocument extends Document {
 						}}
 					/>
 				</body>
-			</html>
+			</Html>
 		);
 	}
 }

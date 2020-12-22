@@ -19,21 +19,22 @@ const Index = () => {
 
 		const response = await fetch(`/api/address/${encodeURIComponent(address)}`);
 		const data = await response.json();
+
 		try {
 			if (data.error) {
-				setState({ ...state, response: data.error, image: '' });
-			} else {
-				const { cryptocurrency } = data;
-				if (/could not be detected/.test(cryptocurrency)) {
-					return setState({ ...state, response: cryptocurrency, image: '' });
-				}
-
-				setState({
-					...state,
-					response: cryptocurrency,
-					image: `../static/images/${cryptocurrency.replace('/', '-').toLowerCase()}.svg`
-				});
+				return setState({ ...state, response: data.error, image: '' });
 			}
+
+			const { cryptocurrency } = data;
+			if (/could not be detected/.test(cryptocurrency)) {
+				return setState({ ...state, response: cryptocurrency, image: '' });
+			}
+
+			setState({
+				...state,
+				response: cryptocurrency,
+				image: `../static/images/${cryptocurrency.replace('/', '-').toLowerCase()}.svg`
+			});
 		} catch (error) {
 			console.error(error);
 			setState({ ...state, response: error.message, image: '' });
@@ -80,7 +81,7 @@ const Index = () => {
 				</form>
 
 				<p className='res'>
-					{state.response} {(state.image.length > 0) ? <img src={state.image} /> : ''}
+					{state.response} {(state.image.length > 0) && <img src={state.image} />}
 				</p>
 			</section>
 
