@@ -58,7 +58,7 @@
     "detector"
   ],
   "engines": {
-    "node": "14.x"
+    "node": "12.x"
   },
   "dependencies": {
     "cryptocurrency-address-detector": "^1.1.2",
